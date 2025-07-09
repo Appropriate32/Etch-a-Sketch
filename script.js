@@ -7,10 +7,7 @@ for (let i = 0; i < 256; i++) {
 
     square.addEventListener("mouseenter", () => {
     square.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-    })
-    square.addEventListener("mouseleave", () => {
-        square.style.backgroundColor = "aquamarine";
-    })
+    });
 
     container.appendChild(square);
 }
@@ -30,9 +27,6 @@ button.addEventListener("click", () => {
 
             square.addEventListener("mouseenter", () => {
             square.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
-          });
-            square.addEventListener("mouseleave",() => {
-            square.style.backgroundColor = "aquamarine";
           });
 
             container.appendChild(square);
