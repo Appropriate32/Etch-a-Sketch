@@ -11,7 +11,6 @@ for (let i = 0; i < 256; i++) {
 
     container.appendChild(square);
 }
-let oldSquareCount = 256;
 const changeSize = document.querySelector(".change-size");
 changeSize.addEventListener("click", () => {
     let numSquares = parseInt(prompt("How many squares per side?"));
