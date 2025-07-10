@@ -38,6 +38,13 @@ changeSize.addEventListener("click", () => {
 const reset = document.querySelector(".reset");
 reset.addEventListener("click", () => {
     const squareAll = document.querySelectorAll(".square");
-    squareAll.forEach(currentSquare => currentSquare.style.backgroundColor = "aquamarine"); 
+    squareAll.forEach(currentSquare => {
+        currentSquare.classList.add("resetting");
+        currentSquare.style.backgroundColor = "aquamarine";
+
+        setTimeout(() => {
+            currentSquare.classList.remove("resetting");
+        }, 800);
+    }); 
 });
 
